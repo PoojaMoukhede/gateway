@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="list.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row" style="display: flex;">
+            <div class="col-lg-4 my-2">
+                <div class="btn-group">
+                    <button class="btn btn-info" id="list">
+                        <i class="fa-sharp fa-solid fa-list" style="color: #ffffff;"></i>
+                        List View
+                    </button>
+                    <button class="btn btn-danger" id="grid">
+                        <img src="./assets//Vector.png" style="height: 15px; margin-right:8px" />
+                        Grid View
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-4 my-3">
+                <span class="no_devices">Total Device : 35</span>
+            </div>
+            <div class="col-lg-4 my-3 text-center">
+                <span class="d-flex flex-row">
+                    <span class="d-flex flex-row mr-4"><i class="fa-solid fa-circle"
+                            style="color: #5AC55A;font-size: 24px;"> </i>
+                        <p>16</p>
+                    </span>
+                    <span class="d-flex flex-row mr-4"><i class="fa-solid fa-circle"
+                            style="color: #FABD20; font-size: 24px;"> </i>
+                        <p>16</p>
+                    </span>
+                    <span class="d-flex flex-row"><i class="fa-solid fa-circle"
+                            style="color: #DC3545; font-size: 24px;"> </i>
+                        <p>16</p>
+                    </span>
+                </span>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div id="gateways" class="row group-view">
+            <div class="item" onclick="openModal()">
+                <div class="row"  id="o" style="background-color:  #FAC5CE;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 01</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1 ">
+                        <div class="bookmark_red bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="row" style="background-color: #D7F7D7;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 02</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_green bookmark d-flex d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="row" style="background-color: #D7F7D7;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 03</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_green bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="row" style="background-color: #D7F7D7;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 04</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_green bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="row" style="background-color: #D7F7D7;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 05</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_green bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="row" style="background-color: #D7F7D7;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 06</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_green bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="row" style="background-color:  #F5F5B8;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 07</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_yellow bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item">
+                <div class="row" style="background-color:  #FAC5CE;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 08</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_red bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="row" style="background-color: #D7F7D7;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 09</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_green bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="row" style="background-color: #FAC5CE;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 10</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_red bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="row" style="background-color: #FAC5CE;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 11</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_red bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="row" style="background-color: #D7F7D7;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 12</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_green bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="row" style="background-color: #D7F7D7;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 13</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_green bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="item">
+                <div class="row" style="background-color: #FAC5CE;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 14</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_red bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="row" style="background-color: #D7F7D7; height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 15</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_green bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="row" style="background-color: #F5F5B8;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 16</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_yellow bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="row" style="background-color: #FAC5CE;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 17</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_red bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="row" style="background-color: #F5F5B8;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 18</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_yellow bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="row" style="background-color:  #FAC5CE;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 19</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_red bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="row" style="background-color: #FAC5CE;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 20</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_red bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="row" style="background-color: #D7F7D7; height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 21</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_green bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="row" style="background-color: #D7F7D7;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 22</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_green bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="row" style="background-color: #D7F7D7; height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 23</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_green bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="row" style="background-color: #FAC5CE;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 24</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_red bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="row" style="background-color:   #D7F7D7;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 25</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_green bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="row" style="background-color: #FAC5CE;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 26</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_red bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="row" style="background-color: #FAC5CE;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 27</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_red bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="row" style="background-color: #D7F7D7;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 28</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_green bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="row" style="background-color: #D7F7D7;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 29</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_green bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="row" style="background-color: #FAC5CE;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 30</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_red bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="row" style="background-color:  #FAC5CE;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 31</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_red bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="row" style="background-color: #F5F5B8;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 32</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_yellow bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="row" style="background-color: #FAC5CE;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 33</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_red bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="row" style="background-color: #F5F5B8;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 34</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_yellow bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="row" style="background-color: #FAC5CE;height:40px;">
+                    <div class="col-md-6 d-flex mt-2">
+                        <img src="./assets/ankr.png" alt="Logo 1" style="height: 25px; margin-left:30px">
+                        <h4 class="mt-1 ml-4">GATEWAY 35</h4>
+                    </div>
+                    <div class="col-md-6 text-right p-1">
+                        <div class="bookmark_red bookmark d-flex">
+                            <i class="fa-solid fa-circle" style="padding: 8px;"></i>
+                            <p class="text-center">13/07/2023 04:00:35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="itemModal" tabindex="-1" role="dialog" aria-labelledby="itemModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header d-flex">
+                        <img src="./assets/ankr.png" class="img-modal" />
+                        <h5 class="modal-title" id="itemModalLabel">GATEWAY 01</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="modalBody">
+                        <div class="d-flex two row">
+                            <div class="date0 d-flex column">
+                                <i class="fa-solid fa-clock pt-1" style="font-size: 20px;"></i>
+                                <p class="text-center" style="font-size: 16px;">04/07/2023 04:00:35</p>
+                            </div>
+                            <div class="gray d-flex column">
+                                <i class="fa-solid fa-circle mt-3" style="padding: 8px; color:#C90D0D;"></i>
+                                <span class="d-flex flex-column active_status">
+                                    <p class="mt-2 mb-0">Active Status</p>
+                                    <p class="days">10 Days ago</p>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="date1 d-flex column">
+                            <i class="fa-solid fa-location-dot mt-1" style="font-size: 22px;"></i>
+                            <p style="font-size: 16px;">Multispan Instruments Control Pvt Ltd GIDC,<br /> Vatva
+                                Ahmedabad</p>
+                        </div>
+
+                        <div class="modal-header d-flex">
+                            <p>Modal Name</p>
+                            <p>FA - 11</p>
+                            <p>05/18</p>
+                        </div>
+                        <div class="modal-header d-flex">
+                            <p>Total Device : 18</p>
+                            <span class="green d-flex">
+                                <i class="fa-solid fa-circle"></i>
+                                <p>Online</p>
+                                <p>05</p>
+                            </span>
+                            <span class="red d-flex">
+                                <i class="fa-solid fa-circle "></i>
+                                <p>Offline</p>
+                                <p>13</p>
+                            </span>
+                        </div>
+                        <div class="d-flex justify-content-center align-item-center mt-3">
+                            <button class="btn" onclick="toNavigate()">
+                                History
+                                <i class="fa-solid fa-circle-down"></i>
+                            </button>
+                        </div>
+
+                        <!-- Content of the modal will be populated dynamically -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+
+    <script>
+        const item = document.getElementById('o');
+
+
+    </script>
+</body>
+
+</html>
