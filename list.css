@@ -131,3 +131,6 @@ h4 {
     font-weight: 500;
     
 }
+.card {
+    border-radius: 0 !important;
+}
