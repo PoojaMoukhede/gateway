@@ -14,7 +14,7 @@ function openModal() {
   }
   
 function toNavigate(){
-  window.location.href= './login.html'
+  window.location.href= './login2.html'
 }  
 
 // Random color generator
@@ -39,3 +39,4 @@ setTimeout(function() {
     changeCardColor();
     setInterval(changeCardColor, 5000);
 }, 2000);
+
