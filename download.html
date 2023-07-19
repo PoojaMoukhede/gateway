@@ -16,19 +16,24 @@
     <div id="particles-js">
         <nav class="navbar navbar-light">
             <a class="navbar-brand" href="#">
-                <img src="./assets/logo.png" width="150" height="20" alt="MULTISPAN">
+                <img src="./assets/logo.png" width="170" height="25" alt="MULTISPAN">
             </a>
+            <p id="date-time" style="color:rgb(228, 226, 226);margin-top:10px; margin-right:20px"></p>
         </nav>
 
         <h3 class="text-center mt-5" style="color: white; font-size:38px;">Hello User</h3>
         <p class="text-center mt-1" style="color: rgb(228, 226, 226);">To Download history click on below button</p>
         <div class="text-center">
             <!-- dummy file from google  -->
-            <button type="button" class="btn center"><a class="link" href="data:application/octet-stream;charset=utf-16le;base64,//5mAG8AbwAgAGIAYQByAAoA">Download</a></button>
-          </div>
+            <button type="button" class="btn center"><a class="link"
+                    href="data:application/octet-stream;charset=utf-16le;base64,//5mAG8AbwAgAGIAYQByAAoA">Download</a></button>
+        </div>
 
     </div>
-
+    <script>
+        var dt = new Date().toLocaleString();
+        document.getElementById('date-time').innerHTML = dt;
+    </script>
 </body>
 
 </html>
