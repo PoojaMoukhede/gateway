@@ -69,6 +69,7 @@ h4 {
 
 .bookmark>p {
     padding: 4px;
+    font-size: 0.8rem;
 }
 
 .img-modal {
@@ -133,4 +134,5 @@ h4 {
 }
 .card {
     border-radius: 0 !important;
+    /* height: 60px; */
 }
